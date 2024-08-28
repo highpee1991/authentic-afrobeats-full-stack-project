@@ -18,8 +18,23 @@ const supabase = createClient(supabaseUrl, supabaseKey);
 const stripe = Stripe(process.env.STRIPE_SECRET_KEY);
 const app = express();
 
-// Use CORS middleware
-app.use(cors());
+const allowedOrigins = [
+  "https://authentic-afrobeats-full-stack-project-frontend.vercel.app",
+];
+
+const corsOptions = {
+  origin: function (origin, callback) {
+    if (allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  allowedHeaders: ["Content-Type", "Authorization"],
+};
+
+app.use(cors(corsOptions));
 
 //////////// node mailer for receiving email notifcation when order is completed
 const transporter = nodemailer.createTransport({
