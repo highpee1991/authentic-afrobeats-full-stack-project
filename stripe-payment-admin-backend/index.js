@@ -18,20 +18,11 @@ const supabase = createClient(supabaseUrl, supabaseKey);
 const stripe = Stripe(process.env.STRIPE_SECRET_KEY);
 const app = express();
 
-const allowedOrigins = [
-  "https://authentic-afrobeats-full-stack-project-frontend.vercel.app",
-];
-
+// Configure CORS to allow requests from your frontend domain
 const corsOptions = {
-  origin: function (origin, callback) {
-    if (allowedOrigins.includes(origin)) {
-      callback(null, true);
-    } else {
-      callback(new Error("Not allowed by CORS"));
-    }
-  },
-  methods: ["GET", "POST", "PUT", "DELETE"],
-  allowedHeaders: ["Content-Type", "Authorization"],
+  origin: "https://authentic-afrobeats-full-stack-project-frontend.vercel.app", // Your frontend URL
+  methods: "GET,POST,PUT,DELETE",
+  allowedHeaders: "Content-Type,Authorization",
 };
 
 app.use(cors(corsOptions));
