@@ -128,13 +128,16 @@ const ShippingForm = () => {
 
       console.log("Creating payment intent for orderId:", orderId);
 
-      const response = await fetch("/create-payment-intent", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ orderId }),
-      });
+      const response = await fetch(
+        "https://authentic-afrobeats-full-stack-project-server.vercel.app/create-payment-intent",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ orderId }),
+        }
+      );
 
       const { clientSecret } = await response.json();
 
