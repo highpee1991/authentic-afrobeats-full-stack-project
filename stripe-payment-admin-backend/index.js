@@ -18,13 +18,6 @@ const supabase = createClient(supabaseUrl, supabaseKey);
 const stripe = Stripe(process.env.STRIPE_SECRET_KEY);
 const app = express();
 
-// // Configure CORS to allow requests from your frontend domain
-// const corsOptions = {
-//   origin: "https://authentic-afrobeats-full-stack-project-frontend.vercel.app", // Your frontend URL
-//   methods: "GET,POST,PUT,DELETE",
-//   allowedHeaders: "Content-Type,Authorization",
-// };
-
 app.use(cors());
 
 //////////// node mailer for receiving email notifcation when order is completed
