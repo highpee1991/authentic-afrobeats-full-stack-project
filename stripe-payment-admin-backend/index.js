@@ -22,8 +22,10 @@ const app = express();
 
 app.use(
   cors({
-    origin:
+    origin: [
       "https://authentic-afrobeats-full-stack-project-frontend.vercel.app",
+      "https://www.aafoodstore.com",
+    ],
     methods: "GET,POST,PUT,DELETE",
     allowedHeaders: "Content-Type,Authorization",
   })
