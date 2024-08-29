@@ -12,7 +12,7 @@ import { toast } from "react-toastify";
 import { formatCurrency } from "../../../utils/helpers";
 
 const stripePromise = loadStripe(
-  "pk_test_51PnE49CNs0k5UD3O9JpHgKtfsQrqmKVRB2n1CaKks6wzKFWCjjgLbhbHDjbj2XtA42xtOh5cMASTqSU9NmJfF7ys00QCm2vR9i"
+  "pk_live_51PnE49CNs0k5UD3OEyMzkZHjuqcxDxsepp9n4nROQva0moMI9oNyEs1kggreKSLzrzUQsC7UpAnGiEuyFESZ6YP0002fkwd0iA"
 );
 
 const FormContainer = styled.form`
