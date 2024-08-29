@@ -18,7 +18,16 @@ const supabase = createClient(supabaseUrl, supabaseKey);
 const stripe = Stripe(process.env.STRIPE_SECRET_KEY);
 const app = express();
 
-app.use(cors());
+// app.use(cors());
+
+app.use(
+  cors({
+    origin:
+      "https://authentic-afrobeats-full-stack-project-frontend.vercel.app",
+    methods: "GET,POST,PUT,DELETE",
+    allowedHeaders: "Content-Type,Authorization",
+  })
+);
 
 //////////// node mailer for receiving email notifcation when order is completed
 const transporter = nodemailer.createTransport({

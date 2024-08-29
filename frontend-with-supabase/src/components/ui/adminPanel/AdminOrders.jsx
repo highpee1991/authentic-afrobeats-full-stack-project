@@ -101,7 +101,7 @@ const fetchOrders = async (date, status) => {
   if (status) query.append("status", status);
 
   const response = await fetch(
-    `https://authentic-afrobeats-full-stack-project-server.vercel.app//orders?${query.toString()}`
+    `https://authentic-afrobeats-full-stack-project-server.vercel.app/orders?${query.toString()}`
   );
   const data = await response.json();
 
