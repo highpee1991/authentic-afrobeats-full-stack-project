@@ -104,7 +104,9 @@ const DeliveryType = styled.span`
 `;
 
 const fetchOrderItems = async (orderId) => {
-  const response = await fetch(`/order/${orderId}`);
+  const response = await fetch(
+    `https://authentic-afrobeats-full-stack-project-server.vercel.app/order/${orderId}`
+  );
   const data = await response.json();
 
   console.log("Fetched Data:", data); // Log the fetched data
