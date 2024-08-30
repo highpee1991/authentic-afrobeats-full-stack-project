@@ -11,7 +11,7 @@ const HeaderStyle = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-left: 1.5rem;
+  padding-left: 2rem;
 
   @media (min-width: 768px) {
     padding-left: 4rem;
