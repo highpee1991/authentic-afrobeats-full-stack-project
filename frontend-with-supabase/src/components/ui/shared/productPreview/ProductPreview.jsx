@@ -72,6 +72,7 @@ const ProductPreview = ({
   products,
   categoryPath,
   limit = 4,
+  id,
 }) => {
   const navigate = useNavigate();
 
@@ -85,7 +86,7 @@ const ProductPreview = ({
 
   return (
     <CategoryPreviewWrapper>
-      <Title>{title}</Title>
+      <Title id={id}>{title}</Title>
       <ProductList>
         {products.slice(0, limit).map((product) => (
           <ProductCard key={product.id}>
@@ -111,7 +112,11 @@ const ProductPreview = ({
           </ProductCard>
         ))}
       </ProductList>
-      <Button size='medium' onClick={handleSeeAllClick}>
+      <Button
+        size='medium'
+        onClick={handleSeeAllClick}
+        style={{ marginTop: "2rem" }}
+      >
         See All {title}
       </Button>
     </CategoryPreviewWrapper>

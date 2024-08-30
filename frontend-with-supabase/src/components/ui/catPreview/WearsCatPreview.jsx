@@ -26,6 +26,7 @@ const WearsCatPreview = () => {
         categoryPath='/africanwearandfashion'
         limit={6}
         pathPrefix={"wears"}
+        id='wearsandStyles'
       />
     </div>
   );

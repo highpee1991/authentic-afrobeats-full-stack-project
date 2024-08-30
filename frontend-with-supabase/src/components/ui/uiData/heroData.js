@@ -5,6 +5,7 @@ const slides = [
     header: "Experience Africa and the Caribbean",
     text: "Authentic food and vibrant wear await you at Authentic Afrobeats Food Store in Humble, TX.",
     buttonLabel: "Shop Now",
+    link: "/#wearsandStyles",
   },
   {
     id: 2,
@@ -12,6 +13,7 @@ const slides = [
     header: "Taste Authentic Flavors",
     text: "Discover African and Caribbean cuisine at Authentic Afrobeats Food Store, Humble, TX.",
     buttonLabel: "Explore",
+    link: "/condiments",
   },
   {
     id: 3,
@@ -19,6 +21,7 @@ const slides = [
     header: "Discover African Culture",
     text: "Explore authentic food and clothing at Authentic Afrobeats Food Store, Humble, TX. ",
     buttonLabel: "Learn More",
+    link: "/#meatandSeaFood",
   },
 ];
 

@@ -26,6 +26,7 @@ const MeatAndSeaFoodDisplay = () => {
         categoryPath='/meatandseafood'
         limit={6}
         pathPrefix={"meat"}
+        id='meatandSeaFood'
       />
     </div>
   );

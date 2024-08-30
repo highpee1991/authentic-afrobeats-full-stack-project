@@ -54,10 +54,11 @@ const WhyChooseUs = () => {
         <Section>
           <SectionTitle id='whyChooseUs'>Free Delivery</SectionTitle>
           <SectionText>
-            Enjoy free delivery within a 20-mile radius of our store on orders
-            over $100. We ensure that your products arrive quickly and safely at
-            your doorstep, making shopping with us convenient and
-            cost-effective.
+            Enjoy free delivery within a 10-mile radius of our store on orders
+            of $100 or more. For orders below $100, give us a call to discuss
+            the best delivery price with a discount. We ensure that your
+            products arrive quickly and safely at your doorstep, making shopping
+            with us both convenient and cost-effective.
           </SectionText>
         </Section>
         <Section>
