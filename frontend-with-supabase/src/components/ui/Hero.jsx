@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import useResize from "../../hooks/UseResize";
 import slides from "./uiData/heroData";
 import Button from "./shared/button/Button";
-import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 
 const HeroContainer = styled.div`
   position: relative;
@@ -161,7 +161,7 @@ const Hero = () => {
                 >
                   {slide.text}
                 </Text>
-                <Link to={slide.link}>
+                <Link key={slide.id} smooth to={slide.link}>
                   <Button
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}

@@ -115,7 +115,7 @@ const ProductPreview = ({
       <Button
         size='medium'
         onClick={handleSeeAllClick}
-        style={{ marginTop: "2rem" }}
+        style={{ marginTop: "1rem" }}
       >
         See All {title}
       </Button>
