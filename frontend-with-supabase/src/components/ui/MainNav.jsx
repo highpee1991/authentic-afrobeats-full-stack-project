@@ -3,6 +3,7 @@ import { FaBars, FaTimes, FaCaretDown, FaSearch } from "react-icons/fa";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import styled from "styled-components";
 import CartIcon from "./cart/CartIcon";
+import FreeDelivery from "./freeDeliverybtn/FreeDelivery";
 
 const HeaderStyle = styled.header`
   padding: 0.8rem;
@@ -15,6 +16,12 @@ const HeaderStyle = styled.header`
   @media (min-width: 768px) {
     padding-left: 4rem;
   }
+`;
+
+const LogoDelivery = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 const ListSearch = styled.div`
@@ -286,9 +293,12 @@ const MainNav = () => {
 
   return (
     <HeaderStyle>
-      <LogoLink to='/'>
-        <ImgStyle src='/images/logo/Final Logo.png' alt='Company-Logo' />
-      </LogoLink>
+      <LogoDelivery>
+        <LogoLink to='/'>
+          <ImgStyle src='/images/logo/Final Logo.png' alt='Company-Logo' />
+        </LogoLink>
+        <FreeDelivery />
+      </LogoDelivery>
       <ListSearch>
         <nav>
           <HamburgerIcon onClick={() => setIsOpen(!isOpen)}>
@@ -392,6 +402,7 @@ const MainNav = () => {
             <CartIcon />
           </Link>
         </CartIconStyle>
+        /*
         <SearchContainer>
           <SearchIconStyle onClick={() => setSearch(!search)}>
             <FaSearch />
@@ -405,6 +416,7 @@ const MainNav = () => {
             )}
           </SearchInputAndIcon>
         </SearchContainer>
+        */
       </ListSearch>
     </HeaderStyle>
   );

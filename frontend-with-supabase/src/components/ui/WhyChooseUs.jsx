@@ -48,7 +48,7 @@ const SectionText = styled.div`
 
 const WhyChooseUs = () => {
   return (
-    <Container>
+    <Container id='whyChooseUs'>
       <Title>Why Choose Us</Title>
       <Content>
         <Section>
