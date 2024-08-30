@@ -402,7 +402,14 @@ const MainNav = () => {
             <CartIcon />
           </Link>
         </CartIconStyle>
-        /*
+      </ListSearch>
+    </HeaderStyle>
+  );
+};
+
+export default MainNav;
+
+/*
         <SearchContainer>
           <SearchIconStyle onClick={() => setSearch(!search)}>
             <FaSearch />
@@ -417,9 +424,3 @@ const MainNav = () => {
           </SearchInputAndIcon>
         </SearchContainer>
         */
-      </ListSearch>
-    </HeaderStyle>
-  );
-};
-
-export default MainNav;

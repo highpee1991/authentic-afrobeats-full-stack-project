@@ -48,11 +48,11 @@ const SectionText = styled.div`
 
 const WhyChooseUs = () => {
   return (
-    <Container id='whyChooseUs'>
+    <Container>
       <Title>Why Choose Us</Title>
       <Content>
         <Section>
-          <SectionTitle>Free Delivery</SectionTitle>
+          <SectionTitle id='whyChooseUs'>Free Delivery</SectionTitle>
           <SectionText>
             Enjoy free delivery within a 20-mile radius of our store on orders
             over $100. We ensure that your products arrive quickly and safely at
