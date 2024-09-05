@@ -400,84 +400,90 @@ const Cart = () => {
           </PromoText>
         )}
         <CartTitle>YOUR CART</CartTitle>
-        <CartItemsContainer>
-          {state.items.map((item) => (
-            <CartItem key={item.id}>
-              <CartImage
-                src={item.image}
-                alt={`${item.name}`}
-                onClick={() => handleProductClick(item.id)}
-              />
-              <CartDetails>
-                <CartName onClick={() => handleProductClick(item.id)}>
-                  {item.name}
-                </CartName>
-                <CartPrice>{formatCurrency(item.price)}</CartPrice>
-                <QuantityControls>
-                  <QuantityButton
-                    onClick={() =>
-                      handleQuantityChange(item.id, item.quantity - 1)
-                    }
-                    disabled={item.quantity <= 1}
-                  >
-                    -
-                  </QuantityButton>
-                  <QuantityInput
-                    type='number'
-                    value={item.quantity}
-                    onChange={(e) =>
-                      handleQuantityChange(item.id, parseInt(e.target.value))
-                    }
+        {state.items.length > 0 ? (
+          <>
+            <CartItemsContainer>
+              {state.items.map((item) => (
+                <CartItem key={item.id}>
+                  <CartImage
+                    src={item.image}
+                    alt={`${item.name}`}
+                    onClick={() => handleProductClick(item.id)}
                   />
-                  <QuantityButton
-                    onClick={() =>
-                      handleQuantityChange(item.id, item.quantity + 1)
-                    }
-                  >
-                    +
-                  </QuantityButton>
-                </QuantityControls>
-              </CartDetails>
-              <RemoveButton onClick={() => removeItem(item.id)}>
-                <FaTrash />
-              </RemoveButton>
-            </CartItem>
-          ))}
-        </CartItemsContainer>
-        <DeliveryOptions>
-          <DeliveryOption>
-            <input
-              type='radio'
-              value='pickup'
-              checked={state.deliveryOption === "pickup"}
-              onChange={handleDeliveryOptionChange}
-            />
-            <label>Local Pick Up</label>
-          </DeliveryOption>
-          <DeliveryOption>
-            <input
-              type='radio'
-              value='delivery'
-              checked={state.deliveryOption === "delivery"}
-              onChange={handleDeliveryOptionChange}
-            />
-            <label>Delivery</label>
-          </DeliveryOption>
-          {state.deliveryOption === "delivery" && (
-            <DeliveryDetails>
-              <DeliveryAddressInput
-                type='text'
-                placeholder='Enter delivery address'
-                value={deliveryAddress}
-                onChange={handleAddressChange}
-              />
-              <PhoneNumberInput
-                type='text'
-                placeholder='Enter phone number'
-                value={deliveryPhoneNumber}
-                onChange={handlePhoneNumberChange}
-              />
-              {/* <CalculateButton
+                  <CartDetails>
+                    <CartName onClick={() => handleProductClick(item.id)}>
+                      {item.name}
+                    </CartName>
+                    <CartPrice>{formatCurrency(item.price)}</CartPrice>
+                    <QuantityControls>
+                      <QuantityButton
+                        onClick={() =>
+                          handleQuantityChange(item.id, item.quantity - 1)
+                        }
+                        disabled={item.quantity <= 1}
+                      >
+                        -
+                      </QuantityButton>
+                      <QuantityInput
+                        type="number"
+                        value={item.quantity}
+                        onChange={(e) =>
+                          handleQuantityChange(
+                            item.id,
+                            parseInt(e.target.value)
+                          )
+                        }
+                      />
+                      <QuantityButton
+                        onClick={() =>
+                          handleQuantityChange(item.id, item.quantity + 1)
+                        }
+                      >
+                        +
+                      </QuantityButton>
+                    </QuantityControls>
+                  </CartDetails>
+                  <RemoveButton onClick={() => removeItem(item.id)}>
+                    <FaTrash />
+                  </RemoveButton>
+                </CartItem>
+              ))}
+            </CartItemsContainer>
+
+            <DeliveryOptions>
+              <DeliveryOption>
+                <input
+                  type="radio"
+                  value="pickup"
+                  checked={state.deliveryOption === "pickup"}
+                  onChange={handleDeliveryOptionChange}
+                />
+                <label>Local Pick Up</label>
+              </DeliveryOption>
+              <DeliveryOption>
+                <input
+                  type="radio"
+                  value="delivery"
+                  checked={state.deliveryOption === "delivery"}
+                  onChange={handleDeliveryOptionChange}
+                />
+                <label>Delivery</label>
+              </DeliveryOption>
+              {state.deliveryOption === "delivery" && (
+                <DeliveryDetails>
+                  <DeliveryAddressInput
+                    type="text"
+                    placeholder="Enter delivery address"
+                    value={deliveryAddress}
+                    onChange={handleAddressChange}
+                  />
+                  <PhoneNumberInput
+                    type="text"
+                    placeholder="Enter phone number"
+                    value={deliveryPhoneNumber}
+                    onChange={handlePhoneNumberChange}
+                  />
+                  {/* <CalculateButton
                 onClick={calculateDeliveryCost}
                 disabled={isCalculating}
               >
@@ -488,20 +494,24 @@ const Cart = () => {
               ) : (
                 ""
               )} */}
-            </DeliveryDetails>
-          )}
-        </DeliveryOptions>
-        <TotalPriceContainer>
-          <div>Total Price:</div>
-          <div>{formatCurrency(totalPrice)}</div>
-        </TotalPriceContainer>
-        <Button
-          style={{ marginTop: "10px" }}
-          onClick={handleProceedToCheckout}
-          disabled={isSubmitting}
-        >
-          {isSubmitting ? "Loading..." : "Proceed to Checkout"}
-        </Button>
+                </DeliveryDetails>
+              )}
+            </DeliveryOptions>
+            <TotalPriceContainer>
+              <div>Total Price:</div>
+              <div>{formatCurrency(totalPrice)}</div>
+            </TotalPriceContainer>
+            <Button
+              style={{ marginTop: "10px" }}
+              onClick={handleProceedToCheckout}
+              disabled={isSubmitting}
+            >
+              {isSubmitting ? "Loading..." : "Proceed to Checkout"}
+            </Button>
+          </>
+        ) : (
+          <div>Your cart is empty.</div>
+        )}
       </CartContainer>
     </ShortCart>
   );
