@@ -12,6 +12,9 @@ import FruitsandVegetablesDisplay from "../ui/catPreview/FruitsandVegetablesDsip
 import DrinkandBeverageDisplay from "../ui/catPreview/DrinkandBeverage";
 import WhyChooseUs from "../ui/WhyChooseUs";
 import CondimentsPreview from "../ui/catPreview/CondimentsPreview";
+import BeautyandHouseHoldPreview from "../ui/catPreview/BeautyandHouseHoldPreview";
+import GrainFlourCerealPreview from "../ui/catPreview/GrainFlourCerealsPreview";
+import SnacksConfectionariesPreview from "../ui/catPreview/SnacksConfectionariesPreview";
 
 const PageContainer = styled.div`
   /* height: 100vh; */
@@ -27,6 +30,9 @@ const Home = () => {
       <FruitsandVegetablesDisplay />
       <DrinkandBeverageDisplay />
       <CondimentsPreview />
+      <BeautyandHouseHoldPreview />
+      <GrainFlourCerealPreview />
+      <SnacksConfectionariesPreview />
       <BestOffers />
       <WhyChooseUs />
       <StoreLocation />
