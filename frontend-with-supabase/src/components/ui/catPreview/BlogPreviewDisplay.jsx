@@ -20,7 +20,7 @@ const BlogPreviewDisplay = () => {
 
   return (
     <div>
-      <BlogPreview title='Blog' blogs={blogs} categoryPath='/blog' limit={6} />
+      <BlogPreview title='Blog' blogs={blogs} categoryPath='/blog' limit={12} />
     </div>
   );
 };

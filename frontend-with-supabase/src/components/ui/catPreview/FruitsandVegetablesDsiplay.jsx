@@ -24,7 +24,7 @@ const FruitsandVegetablesDisplay = () => {
         title='Fruits and Vegetables'
         products={fruitsandvegetables}
         categoryPath='/fruitsandvegetables'
-        limit={6}
+        limit={12}
         pathPrefix={"fruits"}
       />
     </div>
