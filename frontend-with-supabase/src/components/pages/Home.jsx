@@ -11,6 +11,7 @@ import MeatAndSeaFoodDisplay from "../ui/catPreview/MeatSeaFoodDisplay";
 import FruitsandVegetablesDisplay from "../ui/catPreview/FruitsandVegetablesDsiplay";
 import DrinkandBeverageDisplay from "../ui/catPreview/DrinkandBeverage";
 import WhyChooseUs from "../ui/WhyChooseUs";
+import CondimentsPreview from "../ui/catPreview/CondimentsPreview";
 
 const PageContainer = styled.div`
   /* height: 100vh; */
@@ -25,6 +26,7 @@ const Home = () => {
       <MeatAndSeaFoodDisplay />
       <FruitsandVegetablesDisplay />
       <DrinkandBeverageDisplay />
+      <CondimentsPreview />
       <BestOffers />
       <WhyChooseUs />
       <StoreLocation />
