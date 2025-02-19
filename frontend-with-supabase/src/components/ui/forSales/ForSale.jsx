@@ -12,10 +12,10 @@ const blink = keyframes`
 // Container to center content and ensure responsiveness
 const Container = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: start;
-  min-height: 100vh;
   padding: 1rem;
   box-sizing: border-box;
   background-color: #f9f9f9; /* Light background for better visibility */
@@ -76,25 +76,31 @@ const ForSale = () => {
 
   return (
     <Container>
-      <ImageStyle src="/images/ForSale/sale.jpeg" alt="sale" />
-      <BlinkingText>
-        Breaking News: African Supermarket for Sale in Humble, TX!
-      </BlinkingText>
-      <Content>
-        <div>📍 Address: 9635 N. Sam Houston Pkwy E, Suite 350, Humble, TX</div>
-        <div>
-          🏬 This African Market offers a prime location in a high-traffic
-          shopping center near Beltway 8! A perfect opportunity for investors or
-          business owners!
-        </div>
-        <div>📅 Open House: February 28, 2025, from 7 PM – 9 PM.</div>
-        <div>🔗 Click Below to View Full Details and Make an Offer!</div>
-      </Content>
-      <ButtonWrapper>
-        <Button size="small" onClick={handleButtonClick}>
-          View
-        </Button>
-      </ButtonWrapper>
+      <>
+        <ImageStyle src="/images/ForSale/sale.jpeg" alt="sale" />
+      </>
+      <>
+        <BlinkingText>
+          Breaking News: African Supermarket for Sale in Humble, TX!
+        </BlinkingText>
+        <Content>
+          <div>
+            📍 Address: 9635 N. Sam Houston Pkwy E, Suite 350, Humble, TX
+          </div>
+          <div>
+            🏬 This African Market offers a prime location in a high-traffic
+            shopping center near Beltway 8! A perfect opportunity for investors
+            or business owners!
+          </div>
+          <div>📅 Open House: February 28, 2025, from 7 PM – 9 PM.</div>
+          <div>🔗 Click Below to View Full Details and Make an Offer!</div>
+        </Content>
+        <ButtonWrapper>
+          <Button size="small" onClick={handleButtonClick}>
+            View
+          </Button>
+        </ButtonWrapper>
+      </>
     </Container>
   );
 };
