@@ -17,8 +17,8 @@ const Container = styled.div`
   text-align: start;
   padding: 1rem;
   box-sizing: border-box;
-  background-color: #969595;
-  border-bottom: 1px solid grey;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #969595;
 `;
 
 // Styled blinking text
@@ -37,9 +37,9 @@ const BlinkingText = styled.div`
 // Styled image with responsiveness
 const ImageStyle = styled.img`
   width: 60%;
-  max-width: 300px;
+  max-width: 400px;
   height: auto;
-  margin-bottom: 1rem;
+  margin-bottom: 1rem 0;
 
   @media (max-width: 768px) {
     width: 80%;
@@ -48,7 +48,7 @@ const ImageStyle = styled.img`
 
 // Styled content for spacing and alignment
 const Content = styled.div`
-  font-size: 1rem;
+  font-size: 1.3rem;
   color: #333;
   margin-bottom: 1rem;
 
@@ -76,10 +76,10 @@ const ForSale = () => {
 
   return (
     <Container>
-      <div>
+      <>
         <ImageStyle src="/images/forSale/sale.jpeg" alt="sale" />
-      </div>
-      <div>
+      </>
+      <>
         <BlinkingText>
           Breaking News: African Supermarket for Sale in Humble, TX!
         </BlinkingText>
@@ -100,7 +100,7 @@ const ForSale = () => {
             View
           </Button>
         </ButtonWrapper>
-      </div>
+      </>
     </Container>
   );
 };
