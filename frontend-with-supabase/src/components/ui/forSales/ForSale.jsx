@@ -20,7 +20,10 @@ const Container = styled.div`
 
   @media (max-width: 768px) {
     flex-direction: column;
+    align-items: center;
+    text-align: center;
     max-width: 400px;
+    margin: 0 auto;
   }
 `;
 
@@ -62,6 +65,7 @@ const Content = styled.div`
 
   @media (max-width: 768px) {
     max-width: 400px;
+    text-align: center;
   }
 `;
 
