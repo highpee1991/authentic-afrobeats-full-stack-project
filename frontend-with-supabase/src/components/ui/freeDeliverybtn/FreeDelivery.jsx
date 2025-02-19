@@ -32,7 +32,7 @@ const FlashSaleButton = styled.button`
   position: relative;
 
   &:hover {
-    background-color: #6b70ff;
+    background-color: #ff6b81;
   }
 
   @media (max-width: 768px) {
