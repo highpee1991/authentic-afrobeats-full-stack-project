@@ -12,13 +12,13 @@ const blink = keyframes`
 // Container to center content and ensure responsiveness
 const Container = styled.div`
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: start;
   padding: 1rem;
   box-sizing: border-box;
-  background-color: #f9f9f9; /* Light background for better visibility */
+  background-color: #969595;
+  border-bottom: 1px solid grey;
 `;
 
 // Styled blinking text
@@ -76,10 +76,10 @@ const ForSale = () => {
 
   return (
     <Container>
-      <>
-        <ImageStyle src="/images/ForSale/sale.jpeg" alt="sale" />
-      </>
-      <>
+      <div>
+        <ImageStyle src="/images/forSale/sale.jpeg" alt="sale" />
+      </div>
+      <div>
         <BlinkingText>
           Breaking News: African Supermarket for Sale in Humble, TX!
         </BlinkingText>
@@ -100,7 +100,7 @@ const ForSale = () => {
             View
           </Button>
         </ButtonWrapper>
-      </>
+      </div>
     </Container>
   );
 };
