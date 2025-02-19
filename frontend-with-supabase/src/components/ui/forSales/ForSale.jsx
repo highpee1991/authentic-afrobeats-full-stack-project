@@ -18,6 +18,10 @@ const Container = styled.div`
   padding: 2rem;
   box-sizing: border-box;
   background-color: #f5f5f5;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 const BlinkingText = styled.h1`
@@ -29,7 +33,6 @@ const BlinkingText = styled.h1`
 
   @media (max-width: 768px) {
     font-size: 1.5rem;
-    flex-direction: column;
   }
 `;
 
@@ -37,12 +40,13 @@ const ImageStyle = styled.img`
   width: 70%;
   max-width: 320px;
   height: auto;
-  margin-bottom: 1rem 0;
-  margin-left: -1rem;
+  margin-right: 1rem; /* Reduce the gap between image and text */
+  margin-bottom: 1rem;
 
   @media (max-width: 768px) {
     max-width: 60%;
-    margin-left: 1rem;
+    margin-right: 0; /* Reset margin-right for smaller screens */
+    margin-bottom: 1rem; /* Ensure spacing below the image */
   }
 `;
 
@@ -54,9 +58,6 @@ const Content = styled.div`
 
   div {
     margin-bottom: 0.8rem;
-  }
-
-  @media (max-width: 768px) {
   }
 `;
 
