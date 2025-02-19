@@ -18,10 +18,8 @@ const Container = styled.div`
   padding: 2rem;
   box-sizing: border-box;
   background-color: #f5f5f5;
-  min-height: 100vh;
 `;
 
-// Styled blinking text
 const BlinkingText = styled.h1`
   font-size: 2rem;
   font-weight: bold;
@@ -30,11 +28,10 @@ const BlinkingText = styled.h1`
   margin-bottom: 1rem;
 
   @media (max-width: 768px) {
-    font-size: 1.5rem; /* Adjust font size for smaller screens */
+    font-size: 1.5rem;
   }
 `;
 
-// Styled image with responsiveness
 const ImageStyle = styled.img`
   width: 70%;
   max-width: 320px;
@@ -46,7 +43,6 @@ const ImageStyle = styled.img`
   }
 `;
 
-// Styled content for proper spacing and readability
 const Content = styled.div`
   font-size: 1.2rem;
   color: #333;
@@ -58,17 +54,14 @@ const Content = styled.div`
   }
 
   @media (max-width: 768px) {
-    font-size: 1rem; /* Adjust font size for smaller screens */
   }
 `;
 
-// Button wrapper for proper spacing
 const ButtonWrapper = styled.div`
   margin-top: 1rem;
   text-align: center;
 `;
 
-// The ForSale component
 const ForSale = () => {
   const handleButtonClick = () => {
     window.open(
@@ -79,28 +72,34 @@ const ForSale = () => {
 
   return (
     <Container>
-      <ImageStyle
-        src="/images/forSale/sale.jpeg"
-        alt="African Supermarket for Sale"
-      />
-      <BlinkingText>
-        Breaking News: African Supermarket for Sale in Humble, TX!
-      </BlinkingText>
-      <Content>
-        <div>📍 Address: 9635 N. Sam Houston Pkwy E, Suite 350, Humble, TX</div>
-        <div>
-          🏬 This African Market offers a prime location in a high-traffic
-          shopping center near Beltway 8! A perfect opportunity for investors or
-          business owners!
-        </div>
-        <div>📅 Open House: February 28, 2025, from 7 PM – 9 PM.</div>
-        <div>🔗 Click Below to View Full Details and Make an Offer!</div>
-      </Content>
-      <ButtonWrapper>
-        <Button size="small" onClick={handleButtonClick}>
-          View
-        </Button>
-      </ButtonWrapper>
+      <div>
+        <ImageStyle
+          src="/images/forSale/sale.jpeg"
+          alt="African Supermarket for Sale"
+        />
+      </div>
+      <div>
+        <BlinkingText>
+          Breaking News: African Supermarket for Sale in Humble, TX!
+        </BlinkingText>
+        <Content>
+          <div>
+            📍 Address: 9635 N. Sam Houston Pkwy E, Suite 350, Humble, TX
+          </div>
+          <div>
+            🏬 This African Market offers a prime location in a high-traffic
+            shopping center near Beltway 8! A perfect opportunity for investors
+            or business owners!
+          </div>
+          <div>📅 Open House: February 28, 2025, from 7 PM – 9 PM.</div>
+          <div>🔗 Click Below to View Full Details and Make an Offer!</div>
+        </Content>
+        <ButtonWrapper>
+          <Button size="small" onClick={handleButtonClick}>
+            View
+          </Button>
+        </ButtonWrapper>
+      </div>
     </Container>
   );
 };
