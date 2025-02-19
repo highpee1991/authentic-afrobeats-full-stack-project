@@ -12,10 +12,9 @@ const blink = keyframes`
 // Container to center content and ensure responsiveness
 const Container = styled.div`
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  text-align: start;
   min-height: 100vh;
   padding: 1rem;
   box-sizing: border-box;
@@ -77,7 +76,7 @@ const ForSale = () => {
 
   return (
     <Container>
-      <ImageStyle src="/images/ForSale/sale" alt="sale" />
+      <ImageStyle src="/images/ForSale/sale.jpeg" alt="sale" />
       <BlinkingText>
         Breaking News: African Supermarket for Sale in Humble, TX!
       </BlinkingText>
