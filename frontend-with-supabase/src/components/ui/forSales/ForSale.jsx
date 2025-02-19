@@ -54,7 +54,7 @@ const Content = styled.div`
   color: #333;
   margin-bottom: 1.5rem;
   line-height: 1.6;
-  max-width: 600px;
+  max-width: 400px;
 
   div {
     margin-bottom: 0.8rem;
