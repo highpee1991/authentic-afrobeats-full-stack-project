@@ -29,6 +29,7 @@ const BlinkingText = styled.h1`
 
   @media (max-width: 768px) {
     font-size: 1.5rem;
+    flex-direction: column;
   }
 `;
 
@@ -37,9 +38,11 @@ const ImageStyle = styled.img`
   max-width: 320px;
   height: auto;
   margin-bottom: 1rem 0;
+  margin-left: -1rem;
 
   @media (max-width: 768px) {
     max-width: 60%;
+    margin-left: 1rem;
   }
 `;
 
@@ -59,7 +62,6 @@ const Content = styled.div`
 
 const ButtonWrapper = styled.div`
   margin-top: 1rem;
-  text-align: center;
 `;
 
 const ForSale = () => {
