@@ -12,10 +12,9 @@ const blink = keyframes`
 // Main container for centering and responsiveness
 const Container = styled.div`
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center;
+  text-align: start;
   padding: 2rem;
   box-sizing: border-box;
   background-color: #f5f5f5;
@@ -37,13 +36,13 @@ const BlinkingText = styled.h1`
 
 // Styled image with responsiveness
 const ImageStyle = styled.img`
-  width: 100%;
-  max-width: 400px;
+  width: 70%;
+  max-width: 320px;
   height: auto;
-  margin-bottom: 1rem;
+  margin-bottom: 1rem 0;
 
   @media (max-width: 768px) {
-    max-width: 80%;
+    max-width: 60%;
   }
 `;
 
@@ -66,6 +65,7 @@ const Content = styled.div`
 // Button wrapper for proper spacing
 const ButtonWrapper = styled.div`
   margin-top: 1rem;
+  text-align: center;
 `;
 
 // The ForSale component
