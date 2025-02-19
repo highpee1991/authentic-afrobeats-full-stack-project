@@ -296,8 +296,8 @@ const MainNav = () => {
   return (
     <HeaderStyle>
       <LogoDelivery>
-        <LogoLink to='/'>
-          <ImgStyle src='/images/logo/Final Logo.png' alt='Company-Logo' />
+        <LogoLink to="/">
+          <ImgStyle src="/images/logo/Final Logo.png" alt="Company-Logo" />
         </LogoLink>
         <FreeDelivery />
       </LogoDelivery>
@@ -309,7 +309,7 @@ const MainNav = () => {
           <NavList isOpen={isOpen}>
             <DropdownContainer>
               <DropdownButton
-                to='#'
+                to="#"
                 isActive={dropdownActive}
                 onClick={() => setIsDropdownOpen(!isDropdownOpen)}
               >
@@ -319,7 +319,7 @@ const MainNav = () => {
               <DropdownMenu isOpen={isDropdownOpen}>
                 <li>
                   <DropDownList
-                    to='/africanwearandfashion'
+                    to="/africanwearandfashion"
                     onClick={handleCloseMenu}
                   >
                     Authentic African Wears & Styles
@@ -327,20 +327,20 @@ const MainNav = () => {
                 </li>
                 <li>
                   <DropDownList
-                    to='/beautyandhousehold'
+                    to="/beautyandhousehold"
                     onClick={handleCloseMenu}
                   >
                     Beauty & Household
                   </DropDownList>
                 </li>
                 <li>
-                  <DropDownList to='/condiments' onClick={handleCloseMenu}>
+                  <DropDownList to="/condiments" onClick={handleCloseMenu}>
                     Condiments
                   </DropDownList>
                 </li>
                 <li>
                   <DropDownList
-                    to='/drinkandbeverages'
+                    to="/drinkandbeverages"
                     onClick={handleCloseMenu}
                   >
                     Drink & Beverages
@@ -348,7 +348,7 @@ const MainNav = () => {
                 </li>
                 <li>
                   <DropDownList
-                    to='/fruitsandvegetables'
+                    to="/fruitsandvegetables"
                     onClick={handleCloseMenu}
                   >
                     Fruits & Vegetables
@@ -356,51 +356,51 @@ const MainNav = () => {
                 </li>
                 <li>
                   <DropDownList
-                    to='/grainflourandcereal'
+                    to="/grainflourandcereal"
                     onClick={handleCloseMenu}
                   >
                     Grain, Flour & Cereal
                   </DropDownList>
                 </li>
                 <li>
-                  <DropDownList to='/meatandseafood' onClick={handleCloseMenu}>
+                  <DropDownList to="/meatandseafood" onClick={handleCloseMenu}>
                     Meat & Seafood
                   </DropDownList>
                 </li>
                 <li>
                   <DropDownList
-                    to='/snacksandconfectionaries'
+                    to="/snacksandconfectionaries"
                     onClick={handleCloseMenu}
                   >
                     Snacks & Confectionaries
                   </DropDownList>
                 </li>
                 <li>
-                  <DropDownList to='/others' onClick={handleCloseMenu}>
+                  <DropDownList to="/others" onClick={handleCloseMenu}>
                     More
                   </DropDownList>
                 </li>
               </DropdownMenu>
             </DropdownContainer>
             <li>
-              <NavLinkStyle to='/about' onClick={handleCloseMenu}>
+              <NavLinkStyle to="/about" onClick={handleCloseMenu}>
                 About
               </NavLinkStyle>
             </li>
             <li>
-              <NavLinkStyle to='/blog' onClick={handleCloseMenu}>
+              <NavLinkStyle to="/blog" onClick={handleCloseMenu}>
                 Blog
               </NavLinkStyle>
             </li>
             <li>
-              <NavLinkStyle to='/contact' onClick={handleCloseMenu}>
+              <NavLinkStyle to="/contact" onClick={handleCloseMenu}>
                 Contact
               </NavLinkStyle>
             </li>
           </NavList>
         </nav>
         <CartIconStyle>
-          <Link to='/cart'>
+          <Link to="/cart">
             <CartIcon />
           </Link>
         </CartIconStyle>
@@ -410,19 +410,3 @@ const MainNav = () => {
 };
 
 export default MainNav;
-
-/*
-        <SearchContainer>
-          <SearchIconStyle onClick={() => setSearch(!search)}>
-            <FaSearch />
-          </SearchIconStyle>
-          <SearchInputAndIcon>
-            <SearchInput type='text' placeholder='Search' search={search} />
-            {search && (
-              <IconInputStyle>
-                <FaSearch />
-              </IconInputStyle>
-            )}
-          </SearchInputAndIcon>
-        </SearchContainer>
-        */
