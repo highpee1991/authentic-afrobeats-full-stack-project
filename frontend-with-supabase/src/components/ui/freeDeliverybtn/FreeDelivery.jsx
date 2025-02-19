@@ -32,7 +32,7 @@ const FlashSaleButton = styled.button`
   position: relative;
 
   &:hover {
-    background-color: #ff6b81;
+    background-color: #6b70ff;
   }
 
   @media (max-width: 768px) {
@@ -50,7 +50,7 @@ const FlashSaleButton = styled.button`
 const FreeDelivery = () => {
   return (
     <div>
-      <Link smooth to='/#whyChooseUs'>
+      <Link smooth to="/#whyChooseUs">
         <FlashSaleButton>Free Delivery!</FlashSaleButton>
       </Link>
     </div>
