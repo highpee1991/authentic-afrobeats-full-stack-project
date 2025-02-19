@@ -37,7 +37,7 @@ const BlinkingText = styled.div`
 // Styled image with responsiveness
 const ImageStyle = styled.img`
   width: 60%;
-  max-width: 400px;
+  max-width: 300px;
   height: auto;
   margin-bottom: 1rem 0;
 
@@ -76,10 +76,10 @@ const ForSale = () => {
 
   return (
     <Container>
-      <>
+      <div>
         <ImageStyle src="/images/forSale/sale.jpeg" alt="sale" />
-      </>
-      <>
+      </div>
+      <div>
         <BlinkingText>
           Breaking News: African Supermarket for Sale in Humble, TX!
         </BlinkingText>
@@ -100,7 +100,7 @@ const ForSale = () => {
             View
           </Button>
         </ButtonWrapper>
-      </>
+      </div>
     </Container>
   );
 };
