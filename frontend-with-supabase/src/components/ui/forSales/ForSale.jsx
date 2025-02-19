@@ -2,14 +2,12 @@ import React from "react";
 import Button from "../shared/button/Button";
 import styled, { keyframes } from "styled-components";
 
-// Keyframe for blinking effect
 const blink = keyframes`
   50% {
     opacity: 0;
   }
 `;
 
-// Main container for centering and responsiveness
 const Container = styled.div`
   display: flex;
   align-items: center;
@@ -18,6 +16,7 @@ const Container = styled.div`
   padding: 2rem;
   box-sizing: border-box;
   background-color: #f5f5f5;
+  max-width: 100%;
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -40,13 +39,13 @@ const ImageStyle = styled.img`
   width: 70%;
   max-width: 320px;
   height: auto;
-  margin-right: 1rem; /* Reduce the gap between image and text */
+  margin-right: 1rem;
   margin-bottom: 1rem;
 
   @media (max-width: 768px) {
     max-width: 60%;
-    margin-right: 0; /* Reset margin-right for smaller screens */
-    margin-bottom: 1rem; /* Ensure spacing below the image */
+    margin-right: 0;
+    margin-bottom: 1rem;
   }
 `;
 
@@ -55,6 +54,7 @@ const Content = styled.div`
   color: #333;
   margin-bottom: 1.5rem;
   line-height: 1.6;
+  max-width: 600px;
 
   div {
     margin-bottom: 0.8rem;
@@ -63,6 +63,10 @@ const Content = styled.div`
 
 const ButtonWrapper = styled.div`
   margin-top: 1rem;
+
+  @media (max-width: 768px) {
+    text-align: center;
+  }
 `;
 
 const ForSale = () => {
