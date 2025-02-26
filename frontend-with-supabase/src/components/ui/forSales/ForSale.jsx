@@ -99,7 +99,7 @@ const ForSale = () => {
         </BlinkingText>
         <Content>
           <div>
-            📍 Address: 9635 N. Sam Houston Pkwy E, Suite 350, Humble, TX
+            📍 Address: 9635 N Sam Houston Pkwy E, Suite 350, Humble, TX 77396
           </div>
           <div>
             🏬 This African Market offers a prime location in a high-traffic

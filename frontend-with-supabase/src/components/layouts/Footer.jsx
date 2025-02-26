@@ -114,47 +114,47 @@ const Footer = () => {
         <Section>
           <Logo>Authentic Afrobeats</Logo>
           <h3>Contact</h3>
-          <p>9635 N Sam Houston Pkwy E ste 350, Humble, TX 77396</p>
+          <p>9635 N Sam Houston Pkwy E, Suite 350, Humble, TX 77396</p>
           <p>Phone: 832 992 2340</p>
           <p>Email: aafoodstores@gmail.com</p>
         </Section>
         <Section>
           <h3>Quick Links</h3>
           <Links>
-            <a href='/about'>About Us</a>
-            <a href='/products'>Products</a>
-            <a href='/blog'>Blog</a>
-            <a href='/contact'>Contact Us</a>
+            <a href="/about">About Us</a>
+            <a href="/products">Products</a>
+            <a href="/blog">Blog</a>
+            <a href="/contact">Contact Us</a>
           </Links>
         </Section>
         <Section>
           <h3>Follow Us</h3>
           <SocialIcons>
             <IconLink
-              href='https://www.facebook.com/profile.php?id=61556320058264&mibextid=ZbWKwL'
-              target='_blank'
-              rel='noopener noreferrer'
+              href="https://www.facebook.com/profile.php?id=61556320058264&mibextid=ZbWKwL"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <FaSquareFacebook />
             </IconLink>
             <IconLink
-              href='https://www.instagram.com/authentic_afrobeats_food_store?igsh=ZTc3ZmIzaTZrbXd1'
-              target='_blank'
-              rel='noopener noreferrer'
+              href="https://www.instagram.com/authentic_afrobeats_food_store?igsh=ZTc3ZmIzaTZrbXd1"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <FaSquareInstagram />
             </IconLink>
             <IconLink
-              href='https://www.google.com/maps/place/Authentic+Afrobeats+Food+Store/@29.9366965,-95.2472128,15z/data=!4m6!3m5!1s0x8640b1c45dc5cc37:0xeb3ce1c6b7b35ce7!8m2!3d29.9366965!4d-95.2472128!16s%2Fg%2F11vq480b8s?entry=ttu'
-              target='_blank'
-              rel='noopener noreferrer'
+              href="https://www.google.com/maps/place/Authentic+Afrobeats+Food+Store/@29.9366965,-95.2472128,15z/data=!4m6!3m5!1s0x8640b1c45dc5cc37:0xeb3ce1c6b7b35ce7!8m2!3d29.9366965!4d-95.2472128!16s%2Fg%2F11vq480b8s?entry=ttu"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <FaSquareGooglePlus />
             </IconLink>
             <IconLink
-              href='https://www.tiktok.com/@authentic_afrobeat_store?_t=8ngxZGnQ6pK&_r=1'
-              target='_blank'
-              rel='noopener noreferrer'
+              href="https://www.tiktok.com/@authentic_afrobeat_store?_t=8ngxZGnQ6pK&_r=1"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <FaTiktok />
             </IconLink>

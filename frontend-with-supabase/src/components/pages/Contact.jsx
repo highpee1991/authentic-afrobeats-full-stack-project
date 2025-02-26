@@ -40,7 +40,7 @@ const ContactPage = () => {
     <ContactWrapper>
       <ContactInfo>
         <h2>Contact Us</h2>
-        <p>9635 N Sam Houston Pkwy E ste 350, Humble, TX 77396</p>
+        <p>9635 N Sam Houston Pkwy E, Suite 350, Humble, TX 77396</p>
         <p>Phone: 832 992 2340</p>
         <p>Email: aafoodstores@gmail.com</p>
       </ContactInfo>
@@ -51,7 +51,7 @@ const ContactPage = () => {
           style={{ height: "100%", width: "100%" }}
         >
           <TileLayer
-            url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
+            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           />
           <Marker position={position}>
