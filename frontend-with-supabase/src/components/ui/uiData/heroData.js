@@ -11,7 +11,7 @@ const slides = [
     id: 2,
     image: "/images/hero/b2.jpg",
     header: "Taste Authentic Flavors",
-    text: "Discover African and Caribbean cuisine at Authentic Afrobeats Food Store, Humble, TX.",
+    text: "Authentic Afrobeats Food Store is the best African grocery store in Humble, TX.",
     buttonLabel: "Explore",
     link: "/condiments",
   },

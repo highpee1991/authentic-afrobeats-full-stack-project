@@ -69,7 +69,8 @@ const AboutPage = () => {
           bringing you the best and most authentic African and Caribbean foods
           and wears. Our mission is to provide our customers with high-quality
           products that celebrate the rich culture and heritage of Africa and
-          the Caribbean.
+          the Caribbean.Authentic Afrobeats Food Store is the best African
+          grocery store in Humble, TX.
         </p>
         <p>
           Our store is located in Humble, TX, and we pride ourselves on our
@@ -82,24 +83,24 @@ const AboutPage = () => {
       <TeamContainer>
         <TeamMember>
           <MemberImage
-            src='https://via.placeholder.com/150'
-            alt='Team Member 1'
+            src="https://via.placeholder.com/150"
+            alt="Team Member 1"
           />
           <MemberName>Reliance Emunefe</MemberName>
           <MemberRole>Founder & CEO</MemberRole>
         </TeamMember>
         <TeamMember>
           <MemberImage
-            src='https://via.placeholder.com/150'
-            alt='Team Member 2'
+            src="https://via.placeholder.com/150"
+            alt="Team Member 2"
           />
           <MemberName>Torinse Emunefe</MemberName>
           <MemberRole>Head of Marketing</MemberRole>
         </TeamMember>
         <TeamMember>
           <MemberImage
-            src='https://via.placeholder.com/150'
-            alt='Team Member 3'
+            src="https://via.placeholder.com/150"
+            alt="Team Member 3"
           />
           <MemberName>Joy James</MemberName>
           <MemberRole>Product Manager</MemberRole>

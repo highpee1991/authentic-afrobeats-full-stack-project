@@ -40,6 +40,10 @@ const ContactPage = () => {
     <ContactWrapper>
       <ContactInfo>
         <h2>Contact Us</h2>
+        <p>
+          Looking for an African store near you? Visit our store in Humble,
+          Texas.
+        </p>
         <p>9635 N Sam Houston Pkwy E, Suite 350, Humble, TX 77396</p>
         <p>Phone: 832 992 2340</p>
         <p>Email: aafoodstores@gmail.com</p>
