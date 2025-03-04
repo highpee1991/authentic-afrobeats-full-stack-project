@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <div>
       <SocialMediaLogoHeader />
-      <ForSale />
+      {/* <ForSale /> */}
       <MainNav />
     </div>
   );
