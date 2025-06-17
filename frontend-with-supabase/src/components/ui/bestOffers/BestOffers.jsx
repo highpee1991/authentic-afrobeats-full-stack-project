@@ -68,7 +68,7 @@ const BestOffers = () => {
 
   return (
     <BestOffersWrapper>
-      {shuffleProducts.length >= 1 && <Title>Best Offers</Title>}
+      {shuffleProducts.length < 1 && <Title>Best Offers</Title>}
       <Slider {...settings}>
         {shuffleProducts.map((product) => (
           <ProductCard
