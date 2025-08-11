@@ -44,7 +44,7 @@ const ContactPage = () => {
           Looking for an African store near you? Visit our store in Humble,
           Texas.
         </p>
-        <p>9635 N Sam Houston Pkwy E, Suite 350, Humble, TX 77396</p>
+        <p>1920 Rankin Road, STE:145 Houston Texas 77073</p>
         <p>Phone: 832 992 2340</p>
         <p>Email: aafoodstores@gmail.com</p>
       </ContactInfo>
