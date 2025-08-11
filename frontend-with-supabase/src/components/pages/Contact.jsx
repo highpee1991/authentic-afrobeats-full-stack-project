@@ -34,14 +34,14 @@ const MapWrapper = styled.div`
 `;
 
 const ContactPage = () => {
-  const position = [29.9366965, -95.2472128]; // Coordinates for your location
+  const position = [29.96518, -95.36659]; // Coordinates for your location
 
   return (
     <ContactWrapper>
       <ContactInfo>
         <h2>Contact Us</h2>
         <p>
-          Looking for an African store near you? Visit our store in Humble,
+          Looking for an African store near you? Visit our store in Houston,
           Texas.
         </p>
         <p>1920 Rankin Road, STE:145 Houston Texas 77073</p>
